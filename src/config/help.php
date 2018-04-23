@@ -16,7 +16,7 @@ return [
             'attributes.created_at' => 'Create date time',
             'attributes.updated_at' => 'Update date time',
             'id'                    => 'Menu ID',
-        ]
+        ],
     ],
     'getMenuList' => [
         'params' => [
@@ -36,8 +36,8 @@ return [
                 'attributes.created_at' => 'Create date time',
                 'attributes.updated_at' => 'Update date time',
                 'id'                    => 'Menu ID',
-            ]
-        ]
+            ],
+        ],
     ],
     'getMenuList' => [
         'params' => [],
@@ -49,7 +49,7 @@ return [
             'attributes.created_at' => 'Create date time',
             'attributes.updated_at' => 'Update date time',
             'id'                    => 'Menu ID',
-        ]
+        ],
     ],
     'createMenu' => [
         'params' => [
@@ -66,7 +66,7 @@ return [
             'attributes.created_at' => 'Create date time',
             'attributes.updated_at' => 'Update date time',
             'id'                    => 'Menu ID',
-        ]
+        ],
     ],
     'updateMenu' => [
         'params' => [
@@ -80,7 +80,7 @@ return [
             'attributes.created_at' => 'Create date time',
             'attributes.updated_at' => 'Update date time',
             'id'                    => 'Menu ID',
-        ]
+        ],
     ],
     'deleteMenu' => [
         'params' => [
@@ -94,7 +94,7 @@ return [
             'attributes.created_at' => 'Create date time',
             'attributes.updated_at' => 'Update date time',
             'id'                    => 'Menu ID',
-        ]
+        ],
     ],
     'changePassword' => [
         'params' => [
@@ -109,7 +109,7 @@ return [
             'attributes.created_at' => 'Create date time',
             'attributes.updated_at' => 'Update date time',
             'id'                    => 'Menu ID',
-        ]
+        ],
     ],
     'configs' => [
         'menu' => [
@@ -122,5 +122,5 @@ return [
             'delete'          => 'menus/[id]',
             'change_password' => 'menus/[id]/change/password',
         ],
-    ]
+    ],
 ];
