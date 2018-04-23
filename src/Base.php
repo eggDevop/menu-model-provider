@@ -6,25 +6,25 @@ use MenuProvider\Core\Curl;
 
 class Base
 {
- protected $curl;
- protected $messages;
+    protected $curl;
+    protected $messages;
     public $helps;
 
- public function __construct()
- {
-  $this->messages = dirname(__DIR__) . '/src/config/messages.php';
+    public function __construct()
+    {
+        $this->messages = dirname(__DIR__) . '/src/config/messages.php';
         $this->helps    = dirname(__DIR__) . '/src/config/help.php';
- }
+    }
 
- protected function setCurl($url)
- {
-  $this->curl = new Curl($url);
- }
+    protected function setCurl($url)
+    {
+        $this->curl = new Curl($url);
+    }
 
- //Method for manage erroe message
+    // Method for manage erroe message
     protected function manageErrroMessage($errors)
     {
-        //Define output
+        // Define output
         $errorMsg = '';
 
         foreach ($errors as $error) {
@@ -45,10 +45,10 @@ class Base
        
     }
 
- //Method for manage response
-    protected function manageResponse($curl, $serviceName, $successCode=200)
+    // Method for manage response
+    protected function manageResponse($curl, $serviceName, $successCode = 200)
     {
-        //Define output
+        // Define output
         $result = [
             'success' => true,
             'message' => '',
@@ -80,7 +80,7 @@ class Base
             $result['message'] = str_replace('[servicename]', $serviceName, $this->messages['serverError']);
 
         } else {
-            //success
+            // Success
             $result = array_merge($result, $body);
         }
 
